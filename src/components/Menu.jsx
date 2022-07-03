@@ -27,10 +27,6 @@ export default function Menu() {
         type="button"
         value="Hamburguesa"
         />
-                <input className='text-warning'
-        type="button"
-        value="Beber"
-        />
 
        <Cart/>
     
