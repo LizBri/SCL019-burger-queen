@@ -8,60 +8,6 @@ import Cart from './Cart';
 
 export default function Menu() {
 
-//Listado del Menu
-    const[ menus, setMenus ]= useState (
-        [ {id: "Café",
-           price: 5,
-           tag: "Desayuno",
-           image:""},
-
-          {id: "Café con Leche",
-          price: 7,
-          tag:"Desayuno"},
-
-          {id: "Sandwich de Jamón y Queso",
-          price: 10,
-          tag: "Desayuno"},
-
-          {id: "Jugo de frutas Natural",
-          price: 5,
-          tag: "Desayuno"},
-
-          {id: "Hamburguesa Simple",
-          price: 10,
-          tag: "NoDesayuno"},
-
-          {id: "Hamburguesa Doble",
-          price: 15,
-          tag: "NoDesayuno"},
-
-          {id: "Papas Fritas",
-          price: 5,
-          tag: "Acompañamiento"},
-
-          {id: "Aros de Cebolla",
-          price: 5,
-          tag: "Acompañamiento"},
-
-          {id: "Agua 500ml",
-          price: 5,
-          tag: "Beber"},
-
-          {id: "Agua 750ml",
-          price: 7,
-          tag: "Beber"},
-
-          {id: "Bebida/gaseosa 500ml",
-          price: 7,
-          tag: "Beber"},
-
-          {id: "Bebida/gaseosa 750ml",
-          price: 10,
-          tag: "Beber"}
-        ]
-    );
-
-
   return (
     <Fragment>
 
@@ -71,11 +17,19 @@ export default function Menu() {
 
         <input className='text-warning'
         type="button"
-        value="Desayuno"
+        value="Beber"
         />
          <input className='text-warning'
         type="button"
-        value="Menu Tarde"
+        value="Agregado"
+        />
+                <input className='text-warning'
+        type="button"
+        value="Hamburguesa"
+        />
+                <input className='text-warning'
+        type="button"
+        value="Beber"
         />
 
        <Cart/>
