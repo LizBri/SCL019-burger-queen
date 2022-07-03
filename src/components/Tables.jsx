@@ -5,7 +5,7 @@ export default function Tables () {
 
     return(
         <Fragment>
-            <select className="btn btn-warning btn-sm">
+            <select className="text-warning">
                 <option >Mesas</option>
                 <option>Mesa 1</option>
                 <option>Mesa 2</option>

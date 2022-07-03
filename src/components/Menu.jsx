@@ -1,6 +1,10 @@
 import React, { Fragment, useState } from 'react'
 import Tables from './Tables';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+import Cart from './Cart';
+
 
 export default function Menu() {
 
@@ -8,7 +12,8 @@ export default function Menu() {
     const[ menus, setMenus ]= useState (
         [ {id: "Café",
            price: 5,
-           tag: "Desayuno"},
+           tag: "Desayuno",
+           image:""},
 
           {id: "Café con Leche",
           price: 7,
@@ -56,27 +61,24 @@ export default function Menu() {
         ]
     );
 
-//Carrito
-    const [cart, setCart] = useState([])
-
 
   return (
     <Fragment>
 
-      <Link to ='/' className='text-warning float-start'>
-      Back
+      <Link to ='/' className='text-warning float-sm-start '>
+       Back
       </Link>
 
-        <input className='btn btn-warning btn-sm row'
+        <input className='text-warning'
         type="button"
         value="Desayuno"
         />
-         <input className='btn btn-warning btn-sm row'
+         <input className='text-warning'
         type="button"
         value="Menu Tarde"
         />
 
-        <p className='text-warning float-end mr-5'>Cuenta</p>
+       <Cart/>
     
     
 
