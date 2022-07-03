@@ -1,5 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import Tables from './Tables';
+import { Link } from 'react-router-dom';
 
 export default function Menu() {
 
@@ -61,14 +62,21 @@ export default function Menu() {
 
   return (
     <Fragment>
-        <input className='btn btn-warning btn-sm'
+
+      <Link to ='/' className='text-warning float-start'>
+      Back
+      </Link>
+
+        <input className='btn btn-warning btn-sm row'
         type="button"
         value="Desayuno"
         />
-         <input className='btn btn-warning btn-sm'
+         <input className='btn btn-warning btn-sm row'
         type="button"
         value="Menu Tarde"
         />
+
+        <p className='text-warning float-end mr-5'>Cuenta</p>
     
     
 
