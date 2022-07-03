@@ -1,20 +1,20 @@
-import React, { Fragment } from "react";
-import Tables from "./Tables";
+
+import AppLogo from "./AppLogo";
+import { Link } from "react-router-dom"
 
 
-export default function Home(){
-    return(
+export default function Home() {
+  return (
+    <div>
 
-        <Fragment>
-            <input className="btn btn-outline-warning col mb-3 btn-sm" 
-                   type= "button" 
-                   value= "Mesas" 
-                   onClick={Tables}/>
+        <AppLogo/>
 
-            <input className="btn btn-outline-warning col mb-3 btn-sm"
-                   type="button" 
-                   value="Cocina"/>
-
-        </Fragment> 
-    )
+        <Link to="/Mesas"
+      className="btn btn-outline-warning col btn-sm "
+      >Mesas</Link>
+      <Link to="/Cocina"
+      className="btn btn-outline-warning col  btn-sm"
+      >Cocina</Link>
+    </div>
+  );
 }
