@@ -1,0 +1,52 @@
+ { "name": "Menú",
+    "items": [
+    
+  {"id": "Café",
+   "price": 5,
+   "tag": "Bebestible",
+   "image":""},
+
+  {"id": "Café con Leche",
+  "price": 7,
+  "tag":"Bebestible"},
+
+  {"id": "Sandwich de Jamón y Queso",
+  "price": 10,
+  "tag": "Sandwich"},
+
+  {"id": "Jugo de frutas Natural",
+  "price": 5,
+  "tag":"Bebestible"},
+
+  {"id": "Hamburguesa Simple",
+  "price": 10,
+  "tag": "Hamburguesa"},
+
+  {"id": "Hamburguesa Doble",
+  "price": 15,
+  "tag": "Hamburguesa"},
+
+  {"id": "Papas Fritas",
+  "price": 5,
+  "tag": "Acompañamiento"},
+
+  {"id": "Aros de Cebolla",
+  "price": 5,
+  "tag":"Acompañamiento"},
+
+  {"id": "Agua 500ml",
+  "price": 5,
+  "tag": "Bebestible"},
+
+  {"id": "Agua 750ml",
+  "price": 7,
+  "tag": "Bebestible"},
+
+  {"id": "Beba/gaseosa 500ml",
+  "price":8, 
+  "tag": "Bebestible"},
+
+  {"id": "Bebida/gaseosa 750ml",
+  "price": 10,
+  "tag":"Bebestible"}]
+}

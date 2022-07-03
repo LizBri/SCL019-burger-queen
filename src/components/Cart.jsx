@@ -100,12 +100,11 @@ export default function Cart() {
     
     <input onChange={(e)=>{setItem(e.target.value)}}
            className="form-control mb-3 text-warning" 
-           type="text"
            value={item}/>
 
     <input className="btn btn-warning btn-sm"
            type="submit" 
-           value={edicionCarro ? 'Cambiar item' : 'Enviar a Cocina'}
+           value={edicionCarro ? 'Cambiar item' : 'Agregar'}
            />
 </form>
    {
